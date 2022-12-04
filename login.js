@@ -1,10 +1,11 @@
 let a = "raj"
-
 let bag = '';
 
-for(let i=0; i<a.length; i++){
-  if(a[i] == "r"){
-    bag = bag + "p"
-  }
+for(let i=a.length-1; i<=0; i--){
+    bag = bag+a[i];
 }
-console.log(bag)
+if(bag==a){
+  console.log("it's a palindrome");
+}else{
+  console.log("it's not a palindrome");
+}
